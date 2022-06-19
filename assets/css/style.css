@@ -1,0 +1,170 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 100vw;
+    /* height: 100vh; */
+    background: url(/images/bg-intro-desktop.png) no-repeat center fixed;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+.container {
+    display: block;
+}
+.sub_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.side_page_layout {
+    height: 100vh;
+    width: 44vw;
+    /* border: 2px solid white; */
+}
+.side_page_layout {
+    display: flex;
+    align-items: center;
+}
+.side_page_layout div {
+    display: flex;
+    flex-direction: column;
+}
+.page_text_container {
+    margin-right: 32px;
+    justify-content: end;
+}
+.page_form_container {
+    margin-left: 32px;
+    justify-content: start;
+}
+.page_text_container div {
+    display: flex;
+    flex-direction: column;
+}
+.page_text_container div div h3 {
+    font-weight: 900;
+    font-size: 43px;
+    color: white;
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+.page_text_container div div p {
+    margin-top: 13px;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+    font-family:'Franklin Gothic Medium', sans-serif;
+    /* word-spacing: 2.5px; */
+    letter-spacing: 1px;
+}
+.form_head_text {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px 20px;
+}
+.form_head_text p {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    /* font-family: Poppins; */
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+.page_form {
+    background-color: white;
+    /* border: 1px solid yellow; */
+    padding: 25px 20px;
+    border-radius: 5px;
+}
+.page_form div {
+    /* padding: 25px; */
+    /* background-color: wheat; */
+    display: block;
+    width: 31vw;
+}
+.form_group {
+    margin: 18px 6px;
+    width: inherit;
+    height: 40px;
+}
+.form_control {
+    outline: none;
+    border: 2px solid hsla(249, 10%, 26%, 0.195) ;
+    border-radius: 5px;
+    padding: 22px 25px;
+    width: inherit;
+    height: 41px;
+    caret-color: hsl(248, 32%, 49%);
+    font-size: 14px;
+    font-weight: 700;
+    /* font-family: Poppins; */
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+.form_control:focus {
+    border: 2px solid hsl(248, 32%, 49%);
+}
+
+.submit_btn {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    width: inherit;
+    border-radius: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    /* font-family: Poppins; */
+    font-family:'Franklin Gothic Medium', sans-serif;
+}
+.submit_btn:hover {
+    background-color: hsla(154, 59%, 51%, 0.902);
+}
+.form_footer_text {
+    margin: 18px 6px;
+    /* font-family: Poppins; */
+    font-family:'Franklin Gothic Medium', sans-serif;
+    font-weight: 600;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 10px;
+}
+.form_footer_text span {
+    color: hsl(0, 90%, 57%);
+}
+
+
+
+@media (max-width: 690px) {
+    .side_page_layout {
+        height: 70vh;
+        width: 100vw;
+        /* border: 2px solid white; */
+    }
+    .sub_container {
+        border: 5px solid white;
+        display: flex;
+        flex-direction: column;
+    }
+    .page_text_container {
+        margin-right: 0;
+        justify-content: center;
+    }
+    .page_form_container {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .page_form div {
+        /* padding: 25px; */
+        /* background-color: wheat; */
+        display: block;
+        width: 50vw;
+    }
+   
+    
+}
